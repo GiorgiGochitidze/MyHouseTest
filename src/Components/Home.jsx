@@ -16,7 +16,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .post("http://localhost:5000/loadPosts")
+      .post("https://myhousetest.onrender.com/loadPosts")
       .then((response) => {
         console.log(response.data.message);
         setHousesList(response.data.loadCards);

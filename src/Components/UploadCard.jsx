@@ -76,7 +76,7 @@ const UploadCard = () => {
     formData.append("date", formattedDate); // Add date to formData
 
     axios
-      .post("http://localhost:5000/uploadHouse", formData, {
+      .post("https://myhousetest.onrender.com/uploadHouse", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

@@ -9,9 +9,12 @@ app.use(cors());
 app.use(express.json());
 
 const localPathDB = process.env.DB_LOCAL_PATH
+const DbUserPass = process.env.DB_USER_PASS
+
+const uri = `mongodb+srv://giorgigochitidze5555:${DbUserPass}@cluster0.ga0pz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 
 mongoose
-  .connect(localPathDB)
+  .connect(uri)
   .then(() => {
     console.log("Connected to MongoDB");
   })
