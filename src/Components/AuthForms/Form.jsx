@@ -39,7 +39,7 @@ const Form = ({
           transition={{ delay: 0.2 }}
           htmlFor="username"
         >
-          Name:
+          სახელი:
           <input
             value={userName}
             onChange={(e) => setUserName(e.target.value)}
