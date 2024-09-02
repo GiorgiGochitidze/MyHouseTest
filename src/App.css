@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'mxedruli';
+  src: url('./Components/CSS/Fonts/bpg_algeti.otf') format('openType');
+}
+
+
+@font-face {
+  font-family: "Georgian";
+  src: url("./Components/CSS/fonts/bpg_extrasquare_mtavruli_2009.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

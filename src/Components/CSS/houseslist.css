@@ -1,0 +1,97 @@
+.houseslist-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.houses-card{
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    color: rgb(34, 34, 34, 0.6);
+}
+
+.houses-card:hover{
+    cursor: pointer;
+}
+
+.houses-card img{
+    width: 100%;
+}
+
+.houses-card p{
+    margin-inline: 20px;
+}
+
+.prices-container{
+    height: 38px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.houseDetails-container{
+    margin-inline: 20px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.street-address{
+    height: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.location-time-container{
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-show-container{
+    width: 90%;
+    height: 400px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+    position: fixed;
+    overflow-y: scroll;
+    top: 150px;
+    padding-block: 30px;
+}
+
+.image-show-container img{
+    width: 300px;
+}
+
+@media screen and (max-width: 410px){
+    .image-show-container img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .houses-card{
+        width: 90%;
+    }
+
+    .houseDetails-container{
+        flex-wrap: wrap;
+    }
+}

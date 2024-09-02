@@ -1,0 +1,29 @@
+main{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 130px;
+    position: relative;
+}
+
+.techworks-container{
+    position: absolute;
+    width: 80%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: white;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
